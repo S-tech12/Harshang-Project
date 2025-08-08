@@ -1,0 +1,160 @@
+
+.select-box {
+  position: relative;
+ 
+}
+
+.select-box .options-container {
+  background: #1d1d1d;
+  color: #fff;
+  max-height: 0;
+  width: 100%;
+  opacity: 0;
+  border-radius: 1em;
+  overflow: auto;
+  transition:
+  order: 1;
+
+  position: absolute;
+  z-index: 100;
+}
+
+.selected {
+
+
+  order: 0;
+
+ 
+	
+	
+}
+
+.selected::after {
+  content: "";
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  height: 100%;
+  width: 32px;
+  right: 10px;
+  top: 5px;
+  
+  top: 120%;
+
+  transition: all 0.4s;
+}
+
+.select-box .options-container.active {
+  max-height: 240px;
+  opacity: 1;
+  overflow-y: hidden;
+  
+	    border-radius: 1.25em;
+    margin-top: 3em;
+    padding: 1.875em 1.25em;
+}
+
+.selector-wrapper > .arrow {
+ 
+}
+
+.selector-wrapper > .arrow {
+  cursor: pointer;
+	
+  /*float: right !important;
+  display: block;
+  flex-direction: row;
+  position: absolute;
+  align-items: center;
+  background-color: transparent;
+  border-radius: 15px;
+  
+  height: 100%;
+  top: 25%;
+  height: 20px;
+  
+  z-index: 99;*/
+	 transition: 0.2s;
+}
+
+.rotated {
+  transform: rotate(180deg) !important;
+}
+
+.select-box .options-container::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 15px;
+  scrollbar-width: 5px;
+  width: 5px;
+  margin-top: -10px;
+  overflow: hidden;
+  background: transparent;
+  display: none;
+}
+
+
+
+.select-box .options-container::-webkit-scrollbar-thumb {
+  background: #1d1d1d;
+  border-radius: 15px;
+  scrollbar-width: 5px;
+  height: 5px;
+  length: 10px;
+  margin-top: -10px;
+}
+
+.select-box .options-container::-webkit-scrollbar-track {
+  background: transparent;
+  display: none;
+}
+
+.options-container {
+  overflow: overlay !important;
+}
+
+.select-box .option,
+.selected {
+  /* padding: 12px 24px; */
+  cursor: pointer;
+}
+
+.selected {
+ /* padding: 12px 24px;*/
+  /*float: left;*/
+}
+
+.select-box .option:hover {
+  background: #1d1d1d;
+}
+
+.select-box label {
+  cursor: pointer;
+  display: block;
+      padding: 7px 0px;
+    color: #ffffffe0;
+        border-bottom: 1px solid #ccc;
+    font-size: .875em;
+    font-weight: 300;
+    height: 3.75em;
+    line-height: 2.75em;
+}
+/*.select-box label.no-border-btoom{
+	border-bottom: 0
+}*/
+.select-border-top{
+	 border-top: 1px solid #ccc;
+}
+.select-box .option .radio {
+  display: none;
+}
+
+
+.selector-wrapper {
+  position: relative;
+  
+	    display: flex;
+	    justify-content: space-between;
+   /* align-items: end;
+    justify-content: end;*/
+}
+

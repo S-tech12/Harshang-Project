@@ -1,0 +1,142 @@
+.d-flex {
+	display: flex
+}
+
+.progress {
+	width: 100%;
+	height: 6px;
+	display: -ms-flexbox;
+	display: flex;
+	height: 1rem;
+	/* overflow: hidden; */
+	font-size: .75rem;
+	background-color: #e9ecef;
+	border-radius: 0;
+	position: relative;
+}
+
+.skill-wrapper {
+
+	width: 30%;
+
+}
+
+.skill-wrapper span {
+	font-size: 14px;
+	line-height: 20px;
+	text-align: right
+}
+
+.skill-wrapper-stage {
+	margin-left: auto;
+	margin-right: 50px;
+}
+
+.title-stage {
+	width: 100%
+}
+
+.progress-bar {
+	background: #575559;
+}
+
+.progressbar-active {
+	animation-name: progress;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-delay: 0.4s;
+}
+
+.f-600 {
+	font-weight: 600
+}
+
+.all-per span {
+	font-size: 10px;
+	font-weight: 600;
+	position: absolute
+}
+
+@keyframes progress {
+	0% {
+		width: 0;
+	}
+
+	100% {
+		width: 100%;
+	}
+}
+
+.all-per {
+	position: relative;
+}
+
+span#currentDate,
+#currentStage {
+	position: absolute;
+	left: 0;
+
+}
+
+span#currentDate {
+	 margin-left: -19px;
+}
+
+span#currentStage {
+	margin-left: -10px;
+}
+
+#endDate {
+	position: absolute;
+	right: 0;
+}
+
+
+.full-per {
+	position: absolute;
+	right: 0;
+}
+
+.skill-wrapper {
+	position: relative
+}
+
+.onsite-updates .container-split {
+	display: block
+}
+
+/*320 - 767 Mobile*/
+@media screen and (max-width: 767px) {
+	.onsite-updates .container-split {
+		display: block
+	}
+
+	.skill-wrapper {
+		width: 100%;
+		margin-top: 10px;
+
+		display: block;
+		position: relative;
+		margin-bottom: 40px
+	}
+
+
+	.progress {
+		width: 100% !important
+	}
+
+	.mobile-mb-0 {
+		margin-bottom: 0 !important
+	}
+
+	.d-flex {
+		display: block
+	}
+
+	.skill-wrapper.timeline-box {
+		margin-top: 25px !important;
+	}
+	.onsite-updates .container-split {
+    padding-right: 0
+}
+}
